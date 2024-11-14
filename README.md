@@ -10,7 +10,8 @@ The MMM-ShellyStatusTable module displays the switch status and power consumptio
 It is currently hard to say if every device is considered correctly. I have the following devices and it works:
  - Shelly Plug / PlugS
  - Shelly Plus Plug S
- - Shelly Plus 1 PM 
+ - Shelly Plus 1 PM
+ - Shelly PM Mini Gen 3
 
 
 ## Installation
