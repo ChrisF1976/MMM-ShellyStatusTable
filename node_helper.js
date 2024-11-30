@@ -47,18 +47,25 @@ module.exports = NodeHelper.create({
 
                     // Check for Gen 1/2 structure (relay-based devices)
                     if (data.relays) {
-                        isOn = data.relays[0].ison;
-                        power = data.meters ? data.meters[0].power : null;
+                        const channel = parseInt(shelly.ch || 0, 10);
+                        isOn = data.relays[channel]?.ison || false;
+                        power = data.meters?.[channel]?.power || null;
                     }
                     // Check for Gen 3 structure (pm1:0 devices)
                     else if (data["pm1:0"]) {
-                        isOn = true;  // Assume true if data exists for the device
+                        isOn = true; // Assume true if data exists for the device
                         power = data["pm1:0"].apower; // Use 'apower' from pm1:0
                     }
                     // Check for "switch:0" structure
                     else if (data["switch:0"]) {
                         isOn = data["switch:0"].output; // Use 'output' for on/off status
                         power = data["switch:0"].apower; // Use 'apower' for power
+                    }
+                    // Check for RGB Shelly structure (lights array)
+                    else if (data.lights) {
+                        const light = data.lights[0]; // Assume single channel for RGB device
+                        isOn = light?.ison || false;
+                        power = data.meters ? data.meters[0].power : null;
                     }
 
                     results.push({
