@@ -12,6 +12,8 @@ It is currently hard to say if every device is considered correctly. I have the 
  - Shelly Plus Plug S
  - Shelly Plus 1 PM
  - Shelly PM Mini Gen 3
+ - Shelly Plus 2 PM
+ - Shelly Plus RGBW PM
 
 
 ## Installation
