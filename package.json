@@ -28,11 +28,7 @@
     "axios": "^1.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^3.0.0"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
   }
 }
