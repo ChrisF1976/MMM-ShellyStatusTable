@@ -60,7 +60,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 			{ name: "device-namee", id: "6xxxxxxc89" },
 			// device-name: device > settings > device info > device id
 			],
-		updateInterval: 5*1000, // update every 5 seconds - 1s may be possible, but I did't try
+		updateInterval: 3*60*1000, // update every 3 minutes for fixe RateLimit issue in Shelly API
 		}
 	},
 ```
