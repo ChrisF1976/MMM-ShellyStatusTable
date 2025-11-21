@@ -1,5 +1,5 @@
 
-## 21.11:2025 - Improved Stability and Reliability
+## 21.11.2025 - Improved Stability and Reliability
 
 This update fixes critical rate-limiting issues with the Shelly Cloud API and ensures module stability when using multiple Shelly devices.
 
