@@ -31,8 +31,8 @@ In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-She
 
 ```bash
 cd ~/MagicMirror/modules
-git clone https://github.com/ChrisF1976/MMM-ShellystatusTable.git
-cd MMM-ShellystatusTable
+git clone https://github.com/ChrisF1976/MMM-ShellyStatusTable.git
+cd MMM-ShellyStatusTable
 npm install
 ```
 
