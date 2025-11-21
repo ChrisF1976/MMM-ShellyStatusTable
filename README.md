@@ -1,3 +1,10 @@
+
+## 21.11:2025 - Improved Stability and Reliability
+
+This update fixes critical rate-limiting issues with the Shelly Cloud API and ensures module stability when using multiple Shelly devices.
+
+Important note: Since devices are now queried sequentially (one after another), the complete fetch process may take some time with multiple devices. Please be patient - the data will be updated reliably, albeit with a slight delay compared to the previous parallel query approach.
+
 # MMM-ShellyStatusTable
 
 Example:
